@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úkol WA</title>
+</head>
+<body style="background-color:powderblue;">
+    <h1>Kdo je nejlepší basketbalista?</h1>
+    <h2>nejtěžsí otázka historie lidstva</h2>
+
+    <hr color="black" size="5">
+
+    <br>
+    <p>Většina lidí se shodne na tom, že jeden z těchto hráčů je nejlepší:</p>
+    <ul>
+        <li>LeBron James</li>
+        <li>Michael Jordan</li>
+        <li>Kobe Bryant</li>
+    </ul>
+
+    <hr color="black">
+    
+    <h2>Statistiky</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>PLAYER</th>
+                <th>G</th>
+                <th>PTS</th>
+                <th>TRB</th>
+                <th>AST</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LeBron James</td>
+                <td>1492</td>
+                <td>27.1</td>
+                <td>7.5</td>            
+                <td>7.4</td>      
+            </tr>
+            <tr>
+                <td>Michael Jordan</td>
+                <td>1072</td>
+                <td>30.1</td>            
+                <td>6.2</td>      
+                <td>5.3</td>  
+            </tr>
+            <tr>
+                <td>Kobe Bryant</td>
+                <td>1346</td>
+                <td>25.0</td>            
+                <td>5.2</td>      
+                <td>4.7</td>  
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <small><i>* G = games played</i></small><br>
+    <small><i>* PTS = Points per game</i></small><br>
+    <small><i>* TRB = total rebounds</i></small><br>
+    <small><i>* AST = assists</i></small><br>
+    <br>
+    
+    <hr color="black">
+
+    <h2>Obrázek:</h2>
+    <img src="lmk_img.png" alt="LeBron James, Michael Jordan, Kobe Bryant" width="400">
+    <i>* LeBron James, Michael Jordan, Kobe Bryant</i>
+    <br><br>
+    <hr color="black">
+
+    <h3>Finální Otázka</h3>
+
+    <form action="/submit" method="POST">
+        <p>Vyberte kdo z nich je nejlepší:</p>
+        <input type="radio" id="moznost1" name="vyber" value="LeBron James">
+        <label for="moznost1">LeBron James</label><br>
+
+        <input type="radio" id="moznost2" name="vyber" value="Michael Jordan">
+        <label for="moznost2">Michael Jordan</label><br>
+
+        <input type="radio" id="moznost3" name="vyber" value="Kobe Bryant">
+        <label for="moznost3">Kobe Bryant</label><br><br>
+
+        <input type="submit" value="Odeslat"><br><br>
+    </form>
+
+    <p id="tajnej-text"></p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); 
+
+            const selectedRadio = document.querySelector("input[name='vyber']:checked");
+            if (selectedRadio) { 
+                const name = selectedRadio.value;
+                var element = document.getElementById("tajnej-text");
+                var text = document.createTextNode("nevim co s touhle informaci dělat");
+
+                element.appendChild(text);
+            }
+        });
+        });
+    </script>
+
+    <h3>Zdroje:</h3>
+    <ul>
+        <li><a href="https://www.basketball-reference.com/players/j/jamesle01.html">www.basketball-reference.com/players/j/jamesle01.html</a></li>
+        <li><a href="https://www.basketball-reference.com/players/j/jordami01.html">www.basketball-reference.com/players/j/jordami01.html</a></li>
+        <li><a href="https://www.basketball-reference.com/players/b/bryanko01.html">www.basketball-reference.com/players/b/bryanko01.html</a></li>
+    </ul>
+    <p>nevim jak udělat tuhle stránku pěknou když nepoužiju css</p>
+</body>
+</html>
