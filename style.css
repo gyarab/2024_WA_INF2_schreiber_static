@@ -1,0 +1,101 @@
+body {
+    background-color: #f0f8ff; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2e4053; 
+    text-transform: uppercase;
+}
+
+p {
+    color: #5d6d7e;
+    text-indent: 30px;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #34495e;
+}
+
+th, td {
+    border: 1px solid #34495e;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #5d6d7e;
+    color: white;
+}
+
+td {
+    background-color: #f4f6f7;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #34495e;
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+#tajnej-text {
+    color: #16a085;
+    font-weight: bold;
+}
+
+form {
+    text-align: center;
+}
+
+form input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+li:hover {
+    color: #e67e22;
+}
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #2e4053;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+a:hover {
+    color: #1abc9c;
+}
