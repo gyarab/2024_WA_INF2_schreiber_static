@@ -1,15 +1,18 @@
 body {
-    background-color: #f0f8ff; 
+    background-color: #b0e0e6; 
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 h1, h2, h3 {
     text-align: center;
     color: #2e4053; 
     text-transform: uppercase;
+}
+h2 {
+    color: #e74c3c;
 }
 
 p {
@@ -28,8 +31,8 @@ li {
 }
 
 table {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 20px 0;
     border-collapse: collapse;
     border: 1px solid #34495e;
 }
@@ -50,18 +53,11 @@ td {
 }
 
 img {
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     border: 2px solid #34495e;
-}
-
-h2 {
-    color: #e74c3c;
-}
-
-#tajnej-text {
-    color: #16a085;
-    font-weight: bold;
 }
 
 form {
@@ -80,15 +76,21 @@ form input[type="submit"]:hover {
     background-color: #2980b9;
 }
 
+
+#tajnej-text {
+    color: #16a085;
+    font-weight: bold;
+}
+
 li:hover {
     color: #e67e22;
 }
-
 
 hr {
     border: 0;
     height: 2px;
     background-color: #2e4053;
+    margin: 20px 0;
 }
 
 a {
@@ -98,4 +100,51 @@ a {
 
 a:hover {
     color: #1abc9c;
+}
+
+/* CSS Flexbox pro horizontální skládání prvků */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flex-item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+/* CSS Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Media queries pro responzivní design */
+@media screen and (min-width: 768px) {
+    .flex-item {
+        flex-basis: 48%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-item {
+        flex-basis: 31%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
