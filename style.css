@@ -102,7 +102,6 @@ a:hover {
     color: #1abc9c;
 }
 
-/* CSS Flexbox pro horizontální skládání prvků */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +114,6 @@ a:hover {
     margin-bottom: 20px;
 }
 
-/* CSS Grid layout */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -128,7 +126,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Media queries pro responzivní design */
 @media screen and (min-width: 768px) {
     .flex-item {
         flex-basis: 48%;
