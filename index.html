@@ -102,8 +102,8 @@
             const selectedRadio = document.querySelector("input[name='vyber']:checked");
             if (selectedRadio) { 
                 const name = selectedRadio.value;
-                var element = document.getElementById("tajnej-text");
-                var text = document.createTextNode("nevim co s touhle informaci dělat");
+                let element = document.getElementById("tajnej-text");
+                let text = document.createTextNode("nevim co s touhle informaci dělat");
                 element.appendChild(text);
             }
         });
